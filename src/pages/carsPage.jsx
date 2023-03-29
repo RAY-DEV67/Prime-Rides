@@ -44,7 +44,7 @@ export function CarsPage() {
   return (
     <div>
       <div className="lg:absolute lg:top-[13%] pt-[17%] lg:left-[35%] lg:z-[-1] lg:w-[60%]">
-        <p className="mt-[rem] font-bold text-2xl text-center text-white border-y border-[#2099fe] py-[1rem]">Fusion Bags</p>
+        <p className="mt-[rem] font-bold text-2xl text-center text-white border-y border-[#2099fe] py-[1rem]">OPTCARS</p>
         <div className="mx-[2rem]">
         <Search />
         </div>
