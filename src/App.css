@@ -1,6 +1,8 @@
 .App{
   background-color: #333e51;
   height: 100vh;
+}
+.font{
   font-family: 'Lato', sans-serif;
 }
 .navbar{
@@ -22,6 +24,53 @@
 .error{
   color: red;
 }
+.glitch {
+  color: rgb(223, 191, 191);
+  position: relative;
+  font-size: 9vw;
+  animation: glitch 3s 3s infinite;
+}
+
+.glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: -5px 0 magenta;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -5px 0 lightgreen;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+@keyframes glitch {
+  1%{
+    transform: rotateX(10deg) skewX(90deg);
+  }
+  2%{
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+@keyframes glitch-2 {
+  1%{
+    transform: rotateX(10deg) skewX(70deg);
+  }
+  2%{
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
 
 .loading-spinner {
   width: 30px;
@@ -50,5 +99,8 @@
   }
 }
 .dream{
+   font-family: 'Londrina Outline', cursive;
+}
+.power{
   font-family: 'Orbitron', sans-serif;
 }

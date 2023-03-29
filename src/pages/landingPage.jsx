@@ -46,15 +46,15 @@ export function LandingPage() {
   return (
     <div className="relative">
       <div className="landing h-[100vh] relative">
-        <div className="absolute top-[15%]">
+        <div className="absolute top-[15%] container">
           {/* <p className="text-white text-left mx-[1rem] text-[180%] w-[60%] hrh">Welcome to</p> */}
           {/* <p className="text-white text-left mx-[1rem] text-[180%] w-[90%] hrh">Her <span className="text-[#ffd700]">Royal</span> Hairess</p> */}
 
           {/* <p className="text-white mt-[20px] text-left mx-[1rem] text-md w-[90%] BodyFont">Your Go-To destination for high-quality and stylish hair products.</p> */}
-          <p className="text-center text-2xl dream font-bold text-white w-[100vw] BodyFont">
+          <p className="text-center text-2xl power font-bold text-white w-[100vw] BodyFont">
             POWER YOUR
           </p>
-          <p className="text-center dream text-5xl font-bold text-[#2099fe] w-[100vw] BodyFont">
+          <p className="text-center glitch power text-5xl font-bold text-[#2099fe] w-[100vw] BodyFont">
             DREAM DRIVE
           </p>
         </div>
