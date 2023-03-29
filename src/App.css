@@ -1,6 +1,7 @@
 .App{
   background-color: #333e51;
   height: 100vh;
+  font-family: 'Lato', sans-serif;
 }
 .navbar{
   /* background-color: transparent; */
@@ -47,4 +48,7 @@
   100% {
     transform: rotate(360deg);
   }
+}
+.dream{
+  font-family: 'Orbitron', sans-serif;
 }
