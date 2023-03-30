@@ -10,6 +10,7 @@ import { CarsPage } from "./pages/carsPage";
 import { SearchResult } from "./pages/searchresults";
 import { BuyProduct } from "./pages/buyproduct";
 import { Page404 } from "./pages/404page";
+import { BrandPage } from "./pages/brandPage";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
                         <Route path="/Profile" element={<Profile />} />
                         <Route path="/Product" element={<Sell />} />
                         <Route path="/All-Cars" element={<CarsPage />} />
+                        <Route path="/Brand/:brand" element={<BrandPage />} />
                         <Route path="/Search/:search" element={<SearchResult />} />
                         <Route path="/Buy/:collections/:product/:id" element={<BuyProduct />} />
                         <Route

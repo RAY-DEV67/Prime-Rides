@@ -1,6 +1,5 @@
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../config/firebase";
-import { useState} from "react";
 import { useNavigate } from "react-router-dom";
 
 export function TopCard(props) {
@@ -33,6 +32,9 @@ export function TopCard(props) {
 
       <div className="text-left mx-[0.5rem] mt-[0.5rem] flex justify-between">
         <h1>{post.title}</h1>
+      </div>
+      <div className="mx-[0.5rem] text-xs mt-[0.5rem] border border-[#2099fe] w-[60%] text-center bg-[#2099fe]">
+        <h2>{post.model}</h2>
       </div>
       <div className="text-left m-[0.5rem]">
         <h1 className="font-bold mt-[0.5rem]">

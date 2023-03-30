@@ -71,6 +71,7 @@ export function Sell() {
         userId: user?.uid,
         category: category,
         condition: condition,
+        model: model,
         searchKeywords:
           `${title.toLowerCase()} ${category?.toLowerCase()} ${description?.toLowerCase()} ${model?.toLowerCase()}`.split(
             " "

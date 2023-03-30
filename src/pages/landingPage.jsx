@@ -80,11 +80,12 @@ export function LandingPage() {
             </div>
 
             {make ? (
-              <div className=" mt-[1rem] bg-[#2099fe] pt-[1rem] rounded-[10px]">
+              <div className=" mt-[1rem] text-white font-bold bg-[#2099fe] pt-[1rem] rounded-[10px]">
                 <p
                   onClick={() => {
                     setmake(false);
                     setbrand("Acura");
+                    navigate("/Brand/Acura");
                   }}
                   className="w-[100%] text-center pb-[0.5rem]"
                 >
@@ -94,6 +95,7 @@ export function LandingPage() {
                   onClick={() => {
                     setmake(false);
                     setbrand("Audi");
+                    navigate("/Brand/Audi")
                   }}
                   className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
                 >
@@ -103,6 +105,7 @@ export function LandingPage() {
                   onClick={() => {
                     setmake(false);
                     setbrand("BMW");
+                    navigate("/Brand/BMW")
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -111,16 +114,8 @@ export function LandingPage() {
                 <p
                   onClick={() => {
                     setmake(false);
-                    setbrand("Chevrolet");
-                  }}
-                  className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
-                >
-                  Chevrolet
-                </p>
-                <p
-                  onClick={() => {
-                    setmake(false);
                     setbrand("Ford");
+                    navigate("/Brand/Ford")
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -130,6 +125,7 @@ export function LandingPage() {
                   onClick={() => {
                     setmake(false);
                     setbrand("Honda");
+                    navigate("/Brand/Honda")
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -139,6 +135,7 @@ export function LandingPage() {
                   onClick={() => {
                     setmake(false);
                     setbrand("Hyundai");
+                    navigate("/Brand/Hyundai")
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -148,6 +145,7 @@ export function LandingPage() {
                   onClick={() => {
                     setmake(false);
                     setbrand("Infiniti");
+                    navigate("/Brand/Infiniti")
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -157,6 +155,7 @@ export function LandingPage() {
                   onClick={() => {
                     setmake(false);
                     setbrand("Kia");
+                    navigate("/Brand/Kia")
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -166,6 +165,7 @@ export function LandingPage() {
                   onClick={() => {
                     setmake(false);
                     setbrand("Land Rover");
+                    navigate("/Brand/Land Rover")
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -175,6 +175,7 @@ export function LandingPage() {
                   onClick={() => {
                     setmake(false);
                     setbrand("Lexus");
+                    navigate("/Brand/Lexus")
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -184,6 +185,7 @@ export function LandingPage() {
                   onClick={() => {
                     setmake(false);
                     setbrand("Mercedes Benz");
+                    navigate("/Brand/Mercedes Benz")
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -192,25 +194,8 @@ export function LandingPage() {
                 <p
                   onClick={() => {
                     setmake(false);
-                    setbrand("Mitsubishi");
-                  }}
-                  className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
-                >
-                  Mitsubishi
-                </p>
-                <p
-                  onClick={() => {
-                    setmake(false);
-                    setbrand("Nissan");
-                  }}
-                  className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
-                >
-                  Nissan
-                </p>
-                <p
-                  onClick={() => {
-                    setmake(false);
                     setbrand("Peugeot");
+                    navigate("/Brand/Peugeot")
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -220,28 +205,11 @@ export function LandingPage() {
                   onClick={() => {
                     setmake(false);
                     setbrand("Toyota");
-                  }}
-                  className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
-                >
-                  Toyota
-                </p>
-                <p
-                  onClick={() => {
-                    setmake(false);
-                    setbrand("Volkswagen");
-                  }}
-                  className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
-                >
-                  Volkswagen
-                </p>
-                <p
-                  onClick={() => {
-                    setmake(false);
-                    setbrand("Volvo");
+                    navigate("/Brand/Toyota")
                   }}
                   className="w-[100%] text-center py-[0.5rem]"
                 >
-                  Volvo
+                  Toyota
                 </p>
               </div>
             ) : (
