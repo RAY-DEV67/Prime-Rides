@@ -15,7 +15,7 @@ export function Search() {
           type="text"
           placeholder="Find car by model, year..."
           onChange={(e) => {setsearch(e.target.value)}}
-          className="border w-[100%] my-[2rem] rounded-xl pl-[5rem] py-[0.5rem]"
+          className="border w-[100%] my-[2rem] rounded-xl pl-[5rem] lg:pl-[9rem] py-[0.5rem]"
         />
        <div>
        <svg

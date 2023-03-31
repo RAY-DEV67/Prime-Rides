@@ -40,8 +40,18 @@ export function BrandPage() {
  
   return (
     <div>
-      <div className="lg:absolute lg:top-[13%] pt-[17%] lg:left-[35%] lg:z-[-1] lg:w-[60%]">
-        <p className="mt-[rem] font-bold text-2xl text-center text-white border-y border-[#2099fe] py-[1rem]">{brand}</p>
+      <div className="pt-[17%] lg:pt-[5%] bg-[#333e51]">
+        <div className="text-white border-y mt-[rem] mx-[1rem] font-bold flex justify-between border-[#2099fe] py-[1rem]">
+          <p className="text-2xl text-center ">{brand}</p>
+          <button
+            onClick={() => {
+              navigate("/");
+            }}
+            className="px-[0.5rem] text-sm border border-[#2099fe] text-center bg-[#2099fe]"
+          >
+            Go Back
+          </button>
+        </div>
         <div className="mx-[2rem]">
         <Search />
         </div>

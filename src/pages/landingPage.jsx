@@ -6,6 +6,7 @@ import { TopCard } from "../components/topcard";
 import db from "../config/firebase";
 import { useNavigate } from "react-router-dom";
 import { Footer } from "../components/footer";
+import logo from "../assets/logo.png";
 
 export function LandingPage() {
 
@@ -57,6 +58,12 @@ export function LandingPage() {
           <p className="text-center glitch power text-5xl font-bold text-[#2099fe] w-[100vw] BodyFont">
             DREAM DRIVE
           </p>
+        </div>
+        <div className="flex flex-col items-center lg:hidden">
+          <div className="absolute top-[35%] left-[50vw] logo-cont w-[200px]">
+          <img src={logo} alt="logo" className="w-[200px] lg:w-[300px]"/>
+          <div className="mt-[-154px] h-[90px] bg-[#333e51] bg w-[200px] rounded-[20px]"></div>
+          </div>
         </div>
         <div className="flex flex-col items-center">
           <div className="absolute top-[70%] w-[90vw]">
@@ -233,6 +240,7 @@ export function LandingPage() {
                   onClick={() => {
                     setamount(false);
                     setprice("<2 M");
+                    navigate("/Less2M");
                   }}
                   className="w-[100%] text-center pb-[0.5rem]"
                 >
@@ -242,6 +250,7 @@ export function LandingPage() {
                   onClick={() => {
                     setamount(false);
                     setprice("2-3 M");
+                    navigate("/TwoToThreeM");
                   }}
                   className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
                 >
@@ -251,6 +260,7 @@ export function LandingPage() {
                   onClick={() => {
                     setamount(false);
                     setprice("3-4 M");
+                    navigate("/ThreeToFourM");
                   }}
                   className="w-[100%] border-b-[2px] text-center py-[0.5rem]"
                 >
@@ -260,6 +270,7 @@ export function LandingPage() {
                   onClick={() => {
                     setamount(false);
                     setprice(">4 M");
+                    navigate("/Greater4M");
                   }}
                   className="w-[100%] text-center py-[0.5rem]"
                 >

@@ -7,18 +7,14 @@ import { useNavigate } from "react-router-dom";
 import { TopCard } from "../components/topcard";
 import LoadingSpinner from "../components/loadingspinner";
 
-export function CarsPage() {
-  const { product } = useParams();
+export function Greater4M() {
+  const { brand } = useParams();
   const navigate = useNavigate();
 
   const [clothsList, setclothsList] = useState([]);
-  const [lastDocuments, setlastDocuments] = useState(null);
-  const [isEmpty, setisEmpty] = useState(false);
-  const [hasmore, sethasmore] = useState(true);
   const [loading, setloading] = useState(false);
   const [empty, setempty] = useState(false);
 
-  console.log(isEmpty);
   console.log(loading);
 
   // console.log(locationlist);
@@ -27,6 +23,7 @@ export function CarsPage() {
     setloading(true);
     setempty(false);
     db.collection("Products")
+    .where("price" , ">" , 4000000)
       .get()
       .then((collections) => {
         const cloths = collections.docs.map((cloths) => {
@@ -45,7 +42,7 @@ export function CarsPage() {
     <div>
       <div className="pt-[17%] lg:pt-[5%]">
         <div className="text-white border-y mt-[rem] mx-[1rem] font-bold flex justify-between border-[#2099fe] py-[1rem]">
-          <p className="text-2xl text-center ">OPTCARS</p>
+          <p className="text-2xl text-center ">Filter: 4M+</p>
           <button
             onClick={() => {
               navigate("/");

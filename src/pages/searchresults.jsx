@@ -52,12 +52,22 @@ query.get().then((querySnapshot) => {
   }, [search]);
 
   return (
-    <div className="pt-[90px] lg:absolute lg:top-[13%] lg:left-[35%] lg:w-[60%] lg:z-[-1]">
+    <div className="pt-[90px] lg:pt-[50px] bg-[#333e51]">
        <div className="mx-[2rem]">
         <Search />
         </div>
       <div >
-      <p className="mx-[1rem] text-left text-xl text-white">Search Results for {search}:</p>
+      <div className="text-white border-y mt-[rem] mx-[1rem] font-bold flex justify-between border-[#2099fe] py-[1rem]">
+          <p className="text-lg text-center ">Search Results for {search}:</p>
+          <button
+            onClick={() => {
+              navigate("/");
+            }}
+            className="px-[0.5rem] text-sm border border-[#2099fe] text-center bg-[#2099fe]"
+          >
+            Go Back
+          </button>
+        </div>
       <div className="flex">
       </div> 
       <p className="w-[100%] flex flex-col items-center my-[1rem] loaderContainer">{loading ? <LoadingSpinner/> : ""}</p>
@@ -73,7 +83,7 @@ query.get().then((querySnapshot) => {
               onClick={() => {
                 navigate(`/Buy/Products/${post.category}/${post.id}`);
               }}
-              className="lg:w-[95%] max-w-4xl"
+              className="max-w-4xl"
             >
                   <TopCard post={post} />
                 </div>

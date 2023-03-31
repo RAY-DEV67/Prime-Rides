@@ -104,3 +104,9 @@
 .power{
   font-family: 'Orbitron', sans-serif;
 }
+.bg{
+  z-index: -100px;
+}
+.logo-cont{
+  transform: translateX(-50%);
+}

@@ -22,7 +22,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="flex flex-col ">
+    <div className={`flex flex-col lg:${scrolled ? "block" : "hidden"}`}>
       <div className="hidden lg:block lg:absolute lg:w-[30%] ">
         {/* <Profile/> */}
       </div>
@@ -30,7 +30,7 @@ useEffect(() => {
         <div className="flex items-center justify-between">
           <div className="lg:w-[100vw] lg:flex lg:flex-col lg:items-center">
             <Link to="/">
-            <img src={logo} alt="logo" className="w-[20%] lg:w-[300px]"/>
+            <img src={logo} alt="logo" className="w-[20%] lg:w-[200px]"/>
           </Link>
           </div>
           <div className="flex justify-between lg:hidden">

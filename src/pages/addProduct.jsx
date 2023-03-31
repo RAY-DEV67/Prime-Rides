@@ -146,7 +146,7 @@ export function Sell() {
   return (
     <div>
       {user ? (
-        <div className="pt-[20%] bg-[#333e51]">
+        <div className="pt-[20%] lg:pt-[5%] bg-[#333e51]">
           <p className="text-center py-[1rem] text-white">Post An AD</p>
           <div className="flex flex-col items-center">
             <form
