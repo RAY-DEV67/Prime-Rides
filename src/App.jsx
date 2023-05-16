@@ -19,7 +19,7 @@ import { Greater4M } from "./pages/greaterThan4";
 function App() {
 
   return (
-    <div className="App bodyFont">
+    <div className="App bodyFont bg-black">
                   <Router>
                     <ScrollToTop>
                       <Navbar />

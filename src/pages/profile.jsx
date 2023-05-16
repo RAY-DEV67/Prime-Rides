@@ -23,8 +23,8 @@ export function Profile() {
     <div className="profile pt-[120px]">
       {user ? (
         <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center border rounded-[10px] text-white  mt-[2rem] w-[80%] ">
-            <div className="flex flex-col items-center topnav mb-[1rem] py-[1rem] rounded-[10px] bg-[#deab24] font-bold w-[100%]">
+          <div className="flex flex-col items-center border rounded-[10px] text-black  mt-[2rem] w-[80%] ">
+            <div className="flex flex-col items-center topnav mb-[1rem] py-[1rem] rounded-[10px] bg-[#c2bebf] font-bold w-[100%]">
               <p className="mr-[0.5rem] mb-[0.5rem] text-[1.5rem]">
                 Welcome Back
               </p>
@@ -67,17 +67,9 @@ export function Profile() {
             </div>
 
             <div className="flex flex-col items-center mb-[2rem] w-[100%]">
-              <div
-                onClick={() => {
-                    navigate(`/Cart/${user?.uid}`)
-                }}
-                className="rounded-[20px] bg-[#deab24] font-bold mb-[0.5rem] mt-[rem] w-[50%] p-[0.5rem]"
-              >
-                <p className="text-center">View Cart</p>
-              </div>
               <button
                 onClick={SignUserOut}
-                className="rounded-[20px] w-[50%] bg-[#deab24] font-bold mb-[0.5rem] p-[0.5rem]"
+                className="rounded-[20px] w-[50%] bg-[#c2bebf] font-bold mb-[0.5rem] p-[0.5rem]"
               >
                 Sign Out
               </button>
@@ -87,10 +79,10 @@ export function Profile() {
       ) : (
         <div className="overflow-hidden text-white">
           <div className="flex flex-col items-center justify-center h-[70vh]">
-            <div className="border border-[#2099fe] login-page w-[90%] pb-[1rem] rounded-[10px]">
-              <div className="flex flex-col items-center justify-center py-[1rem] bg-[#2099fe] font-bold text-white rounded-t-[10px]">
+            <div className="border border-[#c2bebf] login-page w-[90%] pb-[1rem] rounded-[10px]">
+              <div className="flex flex-col items-center justify-center py-[1rem] bg-[#c2bebf] text-black font-bold rounded-t-[10px]">
                 {/* <img src={logo} alt="Logo" className="w-[25vw] " /> */}
-                <p className="mt-[0.5rem]">POWER YOUR DREAM DRIVE</p>
+                <p className="mt-[0.5rem]">EVERY CAR HAS ITS OWNER</p>
               </div>
               <p className="mt-[2rem] px-[1rem] text-[2rem] text-center mb-[0.5rem] text-bolder">
                 Login
@@ -99,7 +91,7 @@ export function Profile() {
               <div className="flex flex-col items-center">
                 <div
                   onClick={signInWithGoogle}
-                  className="border border-[#2099fe] text-white font-bold sign-in-google rounded-[20px] bg-[#2099fe] cursor-pointer w-[60%] py-[0.3rem] mt-[2rem] flex justify-center"
+                  className="border border-[#c2bebf] text-black font-bold sign-in-google rounded-[20px] bg-[#c2bebf] cursor-pointer w-[60%] py-[0.3rem] mt-[2rem] flex justify-center"
                 >
                   <svg
                     viewBox="-0.5 0 48 48"

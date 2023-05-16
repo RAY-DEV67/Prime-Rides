@@ -6,7 +6,7 @@ import { TopCard } from "../components/topcard";
 import db from "../config/firebase";
 import { useNavigate } from "react-router-dom";
 import { Footer } from "../components/footer";
-import logo from "../assets/logo.png";
+import Prime from "../assets/primeMain.jpg";
 
 export function LandingPage() {
 
@@ -45,35 +45,16 @@ export function LandingPage() {
   console.log(carsList)
 
   return (
-    <div className="relative">
-      <div className="landing h-[100vh] relative">
-        <div className="absolute top-[15%] container">
-          {/* <p className="text-white text-left mx-[1rem] text-[180%] w-[60%] hrh">Welcome to</p> */}
-          {/* <p className="text-white text-left mx-[1rem] text-[180%] w-[90%] hrh">Her <span className="text-[#ffd700]">Royal</span> Hairess</p> */}
-
-          {/* <p className="text-white mt-[20px] text-left mx-[1rem] text-md w-[90%] BodyFont">Your Go-To destination for high-quality and stylish hair products.</p> */}
-          <p className="text-center text-2xl power font-bold text-white w-[100vw] BodyFont">
-            POWER YOUR
-          </p>
-          <p className="text-center glitch power text-5xl font-bold text-[#2099fe] w-[100vw] BodyFont">
-            DREAM DRIVE
-          </p>
-        </div>
-        <div className="flex flex-col items-center lg:hidden">
-          <div className="absolute top-[35%] left-[50vw] logo-cont w-[200px]">
-          <img src={logo} alt="logo" className="w-[200px] lg:w-[300px]"/>
-          <div className="mt-[-154px] h-[90px] bg-[#333e51] bg w-[200px] rounded-[20px]"></div>
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="absolute top-[70%] w-[90vw]">
+    <div className="relative bg-black">
+      <img src={Prime} alt="Prime Rides" className="pt-[4rem]"/>
+      <div className="flex flex-col items-center">
+      <div className="w-[90vw]">
             <Search />
           </div>
-        </div>
       </div>
 
-      <div className="bg-[#333e51] pb-[1rem]">
-        <h2 className="text-white p-[1rem]">Find cars by</h2>
+      <div className="pb-[1rem]">
+        <h2 className="text-[#c2bebf] p-[1rem]">Find cars by</h2>
         <div className="flex flex-col mx-[2rem]">
           <div>
             <div
@@ -87,7 +68,7 @@ export function LandingPage() {
             </div>
 
             {make ? (
-              <div className=" mt-[1rem] text-white font-bold bg-[#2099fe] pt-[1rem] rounded-[10px]">
+              <div className=" mt-[1rem] text-black font-bold bg-[#c2bebf] pt-[1rem] rounded-[10px]">
                 <p
                   onClick={() => {
                     setmake(false);
@@ -235,7 +216,7 @@ export function LandingPage() {
             </div>
 
             {amount ? (
-              <div className="flex flex-col mt-[1rem] bg-[#2099fe] pt-[1rem] rounded-[10px]">
+              <div className="flex flex-col mt-[1rem] bg-[#c2bebf] pt-[1rem] rounded-[10px]">
                 <p
                   onClick={() => {
                     setamount(false);
@@ -283,8 +264,8 @@ export function LandingPage() {
           </div>{" "}
         </div>
       </div>
-      <div className="pb-[1rem] bg-[#333e51]">
-        <div className="flex justify-between p-2 px-[1.5rem] mb-[1rem] rounded-[20px] text-white bg-[#2099fe] heading">
+      <div className="pb-[1rem]">
+        <div className="flex justify-between p-2 px-[1.5rem] mb-[1rem] rounded-[20px] text-black font-bold bg-[#c2bebf] heading">
           <h2>Featured Cars</h2>
           <p
             onClick={() => {
@@ -297,7 +278,7 @@ export function LandingPage() {
         <p className="w-[100%] flex flex-col items-center my-[1rem] loaderContainer">
         {loading && <LoadingSpinner />}
       </p>
-      <p className="w-[100%] text-center">
+      <p className="w-[100%] text-[#c2bebf] text-center">
         {empty && "Please Check Your Network Connection"}
       </p>
 

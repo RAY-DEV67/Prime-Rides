@@ -44,13 +44,13 @@ export function CarsPage() {
   return (
     <div>
       <div className="pt-[17%] lg:pt-[5%]">
-        <div className="text-white border-y mt-[rem] mx-[1rem] font-bold flex justify-between border-[#2099fe] py-[1rem]">
-          <p className="text-2xl text-center ">OPTCARS</p>
+        <div className="text-[#c2bebf] border-y mt-[rem] mx-[1rem] font-bold flex justify-between border-[#c2bebf] py-[1rem]">
+          <p className="text-2xl text-center ">Prime Rides</p>
           <button
             onClick={() => {
               navigate("/");
             }}
-            className="px-[0.5rem] text-sm border border-[#2099fe] text-center bg-[#2099fe]"
+            className="px-[0.5rem] text-sm border border-[#c2bebf] text-center bg-[#c2bebf] text-black"
           >
             Go Back
           </button>
@@ -71,7 +71,7 @@ export function CarsPage() {
           {empty ? "No Results Found!!" : ""}
         </p>
 
-        <div className="flex lg:flex flex-wrap gap-3 justify-center mb-[1rem] bg-[#333e51]">
+        <div className="flex lg:flex flex-wrap gap-3 justify-center mb-[1rem] bg-[#000000]">
         {clothsList.map((post, index) => {
             return (
               <div

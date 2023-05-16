@@ -16,7 +16,7 @@ export function TopCard(props) {
   };
 
   return (
-    <div className="topcard lg:w-[25vw] w-[42vw] border text-white border-[#2099fe] rounded-[10px]">
+    <div className="topcard lg:w-[25vw] w-[42vw] border text-[#c2bebf] border-[#c2bebf] rounded-[10px]">
       <div className="relative">
         <img
           src={post.images}
@@ -33,7 +33,7 @@ export function TopCard(props) {
       <div className="text-left mx-[0.5rem] mt-[0.5rem] flex justify-between">
         <h1>{post.title}</h1>
       </div>
-      <div className="mx-[0.5rem] text-xs mt-[0.5rem] border border-[#2099fe] w-[60%] text-center bg-[#2099fe]">
+      <div className="mx-[0.5rem] text-xs mt-[0.5rem] border border-[#c2bebf] w-[60%] text-center bg-[#c2bebf] text-black font-semibold">
         <h2>{post.model}</h2>
       </div>
       <div className="text-left m-[0.5rem]">
